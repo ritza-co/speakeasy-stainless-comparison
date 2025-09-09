@@ -8,8 +8,5 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "dependencies": {
-    "techbooks": "link:techbooks",
-    "techbooks-speakeasy": "link:techbooks-speakeasy"
-  }
+  "dependencies": {}
 }
