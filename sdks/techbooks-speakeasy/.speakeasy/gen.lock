@@ -1,0 +1,212 @@
+lockVersion: 2.0.0
+id: 18fe7afa-e8bf-45da-82de-9727f9865198
+management:
+  docChecksum: 26dfba8fb2aee99ddef5e6e985d8ed87
+  docVersion: 1.0.0
+  speakeasyVersion: 1.613.0
+  generationVersion: 2.696.0
+  releaseVersion: 0.0.1
+  configChecksum: 3f10a723781926a34821e764ea80d79d
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.12
+    core: 3.21.22
+    defaultEnabledRetries: 0.1.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.13
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.5
+    methodArguments: 0.1.2
+    methodSecurity: 2.82.6
+    oauth2ClientCredentials: 0.5.0
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.3.0
+    serverEvents: 0.1.8
+    unions: 2.85.11
+    uploadStreams: 0.1.0
+generatedFiles:
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/author.md
+  - docs/models/authorwithid.md
+  - docs/models/authorwithname.md
+  - docs/models/fantasybook.md
+  - docs/models/neworder.md
+  - docs/models/operations/addbookrequest.md
+  - docs/models/operations/addbookresponse.md
+  - docs/models/operations/cover.md
+  - docs/models/operations/createordersecurity.md
+  - docs/models/operations/getallbooksresponse.md
+  - docs/models/operations/getallbookssecurity.md
+  - docs/models/operations/getallorderssecurity.md
+  - docs/models/operations/getbookbyidrequest.md
+  - docs/models/operations/getbookbyidresponse.md
+  - docs/models/operations/getorderbyidrequest.md
+  - docs/models/operations/getorderbyidsecurity.md
+  - docs/models/operations/updatebookcoverbyidrequest.md
+  - docs/models/operations/updatebookcoverbyidrequestbody.md
+  - docs/models/order.md
+  - docs/models/orderstreammessage.md
+  - docs/models/product.md
+  - docs/models/programmingbook.md
+  - docs/models/scifibook.md
+  - docs/models/security.md
+  - docs/models/status.md
+  - docs/models/user.md
+  - docs/sdks/books/README.md
+  - docs/sdks/orders/README.md
+  - docs/sdks/sdk/README.md
+  - eslint.config.mjs
+  - examples/.env.template
+  - examples/README.md
+  - examples/booksGetAllBooks.example.ts
+  - examples/package.json
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/booksAddBook.ts
+  - src/funcs/booksGetAllBooks.ts
+  - src/funcs/booksGetBookById.ts
+  - src/funcs/booksUpdateBookCoverById.ts
+  - src/funcs/ordersCreateOrder.ts
+  - src/funcs/ordersGetAllOrders.ts
+  - src/funcs/ordersGetOrderById.ts
+  - src/funcs/ordersGetOrderStream.ts
+  - src/hooks/clientcredentials.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/event-streams.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/models/author.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/responsevalidationerror.ts
+  - src/models/errors/sdkdefaulterror.ts
+  - src/models/errors/sdkerror.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/fantasybook.ts
+  - src/models/index.ts
+  - src/models/neworder.ts
+  - src/models/operations/addbook.ts
+  - src/models/operations/createorder.ts
+  - src/models/operations/getallbooks.ts
+  - src/models/operations/getallorders.ts
+  - src/models/operations/getbookbyid.ts
+  - src/models/operations/getorderbyid.ts
+  - src/models/operations/index.ts
+  - src/models/operations/updatebookcoverbyid.ts
+  - src/models/order.ts
+  - src/models/orderstreammessage.ts
+  - src/models/programmingbook.ts
+  - src/models/scifibook.ts
+  - src/models/security.ts
+  - src/models/user.ts
+  - src/sdk/books.ts
+  - src/sdk/index.ts
+  - src/sdk/orders.ts
+  - src/sdk/sdk.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  getAllBooks:
+    example1:
+      responses:
+        "200":
+          application/json: [{"id": 1, "title": "Clean Code", "description": "A Handbook of Agile Software Craftsmanship", "price": 2999, "category": "Programming", "author": {"id": 1, "name": "Robert C. Martin", "photo": "https://example.com/photos/robert.jpg", "biography": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer..."}, "cover_image": "https://example.com/covers/cleancode.jpg"}, {"id": 2, "title": "The Hobbit", "description": "A fantasy novel by J.R.R. Tolkien", "price": 1599, "category": "Fantasy", "author": {"id": 2, "name": "J.R.R. Tolkien", "photo": "https://example.com/photos/tolkien.jpg", "biography": "John Ronald Reuel Tolkien was an English writer, poet, philologist, and academic..."}, "cover_image": "https://example.com/covers/thehobbit.jpg"}]
+  addBook:
+    example:
+      requestBody:
+        application/json: {"title": "New Sci-Fi Book", "description": "A new Sci-Fi book description", "price": 1999, "category": "Sci-fi", "author": {"name": "New Author", "photo": "https://example.com/photos/newauthor.jpg", "biography": "New Author is an upcoming writer in the Sci-Fi genre..."}, "cover_image": "https://example.com/covers/newbook.jpg"}
+      responses:
+        "201":
+          application/json: {"id": 3, "title": "New Sci-Fi Book", "description": "A new Sci-Fi book description", "price": 1999, "category": "Sci-fi", "author": {"name": "New Author", "photo": "https://example.com/photos/newauthor.jpg", "biography": "New Author is an upcoming writer in the Sci-Fi genre..."}, "cover_image": "https://example.com/covers/newbook.jpg"}
+  getBookById:
+    speakeasy-default-get-book-by-id:
+      parameters:
+        path:
+          bookId: 1
+      responses:
+        "200":
+          application/json: {"id": 1, "title": "Clean Code", "description": "A Handbook of Agile Software Craftsmanship", "price": 2999, "category": "Programming", "author": {"id": 1, "name": "Robert C. Martin", "photo": "https://example.com/photos/robert.jpg", "biography": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer..."}}
+    example1:
+      parameters:
+        path:
+          bookId: 1
+      responses:
+        "200":
+          application/json: {"id": 1, "title": "Clean Code", "description": "A Handbook of Agile Software Craftsmanship", "price": 2999, "category": "Programming", "author": {"id": 1, "name": "Robert C. Martin", "photo": "https://example.com/photos/robert.jpg", "biography": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer..."}, "cover_image": "https://example.com/covers/cleancode.jpg"}
+    example2:
+      parameters:
+        path:
+          bookId: 1
+      responses:
+        "200":
+          application/json: {"id": 2, "title": "The Hobbit", "description": "A fantasy novel by J.R.R. Tolkien", "price": 1599, "category": "Fantasy", "author": {"id": 2, "name": "J.R.R. Tolkien", "photo": "https://example.com/photos/tolkien.jpg", "biography": "John Ronald Reuel Tolkien was an English writer, poet, philologist, and academic..."}, "cover_image": "https://example.com/covers/thehobbit.jpg"}
+  updateBookCoverById:
+    speakeasy-default-update-book-cover-by-id:
+      parameters:
+        path:
+          bookId: 1
+      requestBody:
+        multipart/form-data: {}
+  getAllOrders:
+    example:
+      responses:
+        "200":
+          application/json: [{"id": 1, "date": "2023-05-17T09:24:00Z", "status": "pending", "user": {"id": 1, "email": "test@example.com", "name": "John Doe"}, "products": [{"id": 1, "title": "Clean Code", "description": "A Handbook of Agile Software Craftsmanship", "price": 2999, "category": "Programming", "author": {"id": 1, "name": "Robert C. Martin", "photo": "https://example.com/photos/robert.jpg", "biography": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer..."}, "cover_image": "https://example.com/covers/cleancode.jpg"}]}]
+  createOrder:
+    example:
+      requestBody:
+        application/json: {"user": 1, "products": [1, 3]}
+      responses:
+        "201":
+          application/json: {"id": 1, "date": "2023-05-17T09:24:00Z", "status": "pending", "user": {"id": 1, "email": "user@example.com", "name": "John Doe"}, "products": [{"id": 1, "title": "Clean Code", "description": "A Handbook of Agile Software Craftsmanship", "price": 2999, "category": "Programming", "author": {"id": 1, "name": "Robert C. Martin", "photo": "https://example.com/photos/robert.jpg", "biography": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer..."}}, {"id": 2, "title": "The Hobbit", "description": "A fantasy novel by J.R.R. Tolkien", "price": 1599, "category": "Fantasy", "author": {"id": 2, "name": "J.R.R. Tolkien", "photo": "https://example.com/photos/tolkien.jpg", "biography": "John Ronald Reuel Tolkien was an English writer, poet, philologist, and academic..."}}]}
+  getOrderById:
+    speakeasy-default-get-order-by-id:
+      parameters:
+        path:
+          orderId: 1
+      responses:
+        "200":
+          application/json: {"id": 1, "date": "2023-05-17T09:24:00Z", "status": "pending", "user": {"id": 1, "email": "user@example.com", "name": "John Doe"}, "products": [{"id": 1, "title": "Clean Code", "description": "A Handbook of Agile Software Craftsmanship", "price": 2999, "category": "Programming", "author": {"id": 1, "name": "Robert C. Martin", "photo": "https://example.com/photos/robert.jpg", "biography": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer..."}}, {"id": 2, "title": "The Hobbit", "description": "A fantasy novel by J.R.R. Tolkien", "price": 1599, "category": "Fantasy", "author": {"id": 2, "name": "J.R.R. Tolkien", "photo": "https://example.com/photos/tolkien.jpg", "biography": "John Ronald Reuel Tolkien was an English writer, poet, philologist, and academic..."}}]}
+    example:
+      parameters:
+        path:
+          orderId: 1
+      responses:
+        "200":
+          application/json: {"id": 1, "date": "2023-05-17T09:24:00Z", "status": "pending", "user": {"id": 1, "email": "user@example.com"}, "products": [{"id": 1, "title": "Clean Code", "description": "A Handbook of Agile Software Craftsmanship", "price": 2999, "category": "Programming", "author": {"id": 1, "name": "Robert C. Martin", "photo": "https://example.com/photos/robert.jpg", "biography": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer..."}, "cover_image": "https://example.com/covers/cleancode.jpg"}]}
+  getOrderStream: {}
+examplesVersion: 1.0.2
