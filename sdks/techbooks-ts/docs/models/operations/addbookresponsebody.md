@@ -1,4 +1,0 @@
-# AddBookResponseBody
-
-Book created successfully
-
