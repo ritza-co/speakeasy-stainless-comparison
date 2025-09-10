@@ -1,0 +1,4 @@
+configured_endpoints: 8
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/koladev%2Ftechbooks-stainless-657f0b6c3b60b5229ec092a4dac4f46e10816ca08658075fdbbd98bd0fff0714.yml
+openapi_spec_hash: 26dfba8fb2aee99ddef5e6e985d8ed87
+config_hash: 94a3ff0ba0aadcfe76390f28abfe4d48
