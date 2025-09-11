@@ -1,0 +1,54 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp",
+  "version": "0.0.1",
+  "description": "",
+  "long_description": "Bookstore API: API for a bookstore with categories Programming, Fantasy, and Sci-fi",
+  "author": {
+    "name": "Speakeasy"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "./bin/mcp-server.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/bin/mcp-server.js",
+        "start",
+        "--api-key",
+        "${user_config.api_key}"
+      ]
+    }
+  },
+  "display_name": "Mcp",
+  "tools": [
+    {
+      "name": "books-add-book",
+      "description": "Add a new book\n\nAdds a new book to the bookstore"
+    },
+    {
+      "name": "books-get-book-by-id",
+      "description": "Get a book by ID\n\nReturns a single book"
+    },
+    {
+      "name": "books-update-book-cover-by-id",
+      "description": "Update a book cover by ID\n\nUpdates a single book cover"
+    }
+  ],
+  "prompts": [],
+  "keywords": [
+      "mcp",
+      "bookstore",
+      "api",
+      "for"
+    ],
+  "user_config": {
+      "api_key": {
+        "type": "string",
+        "title": "apiKey",
+        "description": "The apiKey to use for the request",
+        "required": false,
+        "sensitive": true
+      }
+    }
+}

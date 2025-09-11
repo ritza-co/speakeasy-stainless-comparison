@@ -1,4 +1,0 @@
-# GetBookByIdResponseBody
-
-A single book
-
